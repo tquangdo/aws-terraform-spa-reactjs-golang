@@ -5,7 +5,7 @@
 ![Forks](https://img.shields.io/github/forks/tquangdo/aws-terraform-spa-reactjs-golang?color=f05340)
 [![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-terraform-spa-reactjs-golang/issues/new)
 
-![overview](screenshots/overview.png)
+![overview](screenshots/overview_.png)
 
 ## reference
 [viblo](https://viblo.asia/p/serverless-series-golang-bai-6-using-cloudfront-and-lambdaedge-for-static-caching-bJzKmdeD59N)
@@ -64,6 +64,7 @@
     - mapping with `Lambda@Edge` in setting of `CFront>Functions`
     ![apigw](screenshots/apigw.png)
 1. ### s3
+    - bucket name is "serverless_series_spa", but it should be "dtq-bucket-serverless_series_spa", due to miss code: `terraform-start/s3.tf > bucket = "serverless-series-spa"`
     ![s3](screenshots/s3.png)
 1. ### lambda
     ![lambda1](screenshots/lambda1.png)
