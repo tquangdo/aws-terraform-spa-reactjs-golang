@@ -49,7 +49,7 @@
 
 ## run terraform
 - copy paste from `terraform-start/front-end/.env-cmdrc.origin` to `terraform-start/front-end/.env-cmdrc` (because will auto edit json code: staging>REACT_APP_API_URL)
-> ⚠️⚠️ WARNING ⚠️⚠️: just RUN with node v14.19, NOT with newer version!!!
+> ⚠️⚠️ WARNING ⚠️⚠️: just RUN with node v14.19, NOT with newer version!!! (due to ReactJS: `front-end>node_modules`)
 - `cd terraform-start && terraform init && terraform apply -auto-approve`
 
 ## result
@@ -58,14 +58,17 @@
 1. ### cloudfront
     ![cloudfront](screenshots/cloudfront.png)
     ---
+    - setting OAI
     ![oai](screenshots/oai.png)
 1. ### apigw
+    - mapping with `Lambda@Edge` in setting of `CFront>Functions`
     ![apigw](screenshots/apigw.png)
 1. ### s3
     ![s3](screenshots/s3.png)
 1. ### lambda
     ![lambda1](screenshots/lambda1.png)
     ---
+    - setting alias & version
     ![lambda2](screenshots/lambda2.png)
 
 ## NOT done yet!!!
